@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
+            ScrollView {
             VStack {
                 Group {
                     NavigationLink(destination: SMSUnitaire()) {
@@ -150,7 +151,21 @@ struct ContentView: View {
                                         .cornerRadius(10)
                                         .padding(.horizontal)
                 }
+                
+                NavigationLink(destination: StopSmsDeleteList()) {
+                                   Text("Go to StopSmsDeleteView")
+                                       .font(.system(size: 20))
+                                       .foregroundColor(.white)
+                                       .frame(minWidth: 0, maxWidth: .infinity)
+                                       .padding()
+                                       .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.blue.opacity(0.8)]), startPoint: .top, endPoint: .bottom))
+                                       .cornerRadius(10)
+                                       .padding(.horizontal)
+                    }
+                }
+            .padding(.top)
             }
+            .navigationBarTitle("Menu", displayMode: .inline)
         }
     }
 }
