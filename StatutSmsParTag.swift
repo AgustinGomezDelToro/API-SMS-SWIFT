@@ -2,10 +2,10 @@ import SwiftUI
 
 struct StatutSmsParTag: View {
     @State private var result: String = "Loading..."
-
+    
     var body: some View {
         VStack {
-            Text("Statut SMS Par Tag")
+            Text("Statut Sms Par Tag")
                 .font(.title)
                 .padding()
 
@@ -38,12 +38,6 @@ struct StatutSmsParTag: View {
         }
 
         task.resume()
-    }
-}
-
-struct StatutSmsParTag_Previews: PreviewProvider {
-    static var previews: some View {
-        StatutSmsParTag()
     }
 }
 
