@@ -17,7 +17,7 @@ struct Credits: View {
     }
 
     func getCredit() {
-        let apiKey = "9d508bc26ea3e9a4673b4faf66940e4b7e8fcdef"
+        let apiKey = "your-api-key"
         let urlString = "https://api.smspartner.fr/v1/me?apiKey=\(apiKey)"
 
         guard let url = URL(string: urlString) else {
